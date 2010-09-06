@@ -25,7 +25,7 @@ for filename in dotfiles:
     target = os.path.join(home_dir, filename)
     dotfile = os.path.join(dotfiles_dir, filename)
     try:
-        statinfo = os.stat(target)
+        statinfo = os.lstat(target)
     except:
         print("file does not exist : %s" % target)
         statinfo = None

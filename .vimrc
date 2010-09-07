@@ -1,4 +1,3 @@
-set mouse=a
 set nocompatible
 set tabstop=4
 set shiftwidth=4
@@ -19,6 +18,7 @@ set ttyfast
 set sm
 syntax on
 set background=dark
+set mouse=a
 
 set backspace=indent,eol,start
 
@@ -28,3 +28,6 @@ com Q q
 com W w
 com Wq wq
 com WQ wq
+
+nnoremap <C-n> :tabnext<CR>
+nnoremap <C-p> :tabprevious<CR>

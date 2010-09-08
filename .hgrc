@@ -23,3 +23,6 @@ hgext.mq =
 # hgext.shelve = ~/plugins/hgshelve/hgshelve.py
 # enable bookmarks extension
 hgext.bookmarks=
+
+[bookmarks]
+track.current = True

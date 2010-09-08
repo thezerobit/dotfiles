@@ -19,8 +19,7 @@ transplant=
 hgext.color=
 # enable MqExtension: http://mercurial.selenic.com/wiki/MqExtension
 hgext.mq =
-
-hgext.shelve = ~/plugins/hgshelve/hgshelve.py
-
+# enable shelve extension
+# hgext.shelve = ~/plugins/hgshelve/hgshelve.py
 # enable bookmarks extension
 hgext.bookmarks=

@@ -12,7 +12,7 @@ home_dir = os.path.expanduser("~")
 
 print("dotfiles in this folder : %s" % dotfiles_dir)
 dotfiles = set(os.listdir(dotfiles_dir))
-dotfiles = dotfiles - set(['.git', 'make_links.py'])
+dotfiles = dotfiles - set(['.git','.gitignore','make_links.py'])
 dotfiles = list(dotfiles)
 print("\n".join(dotfiles))
 print("target home folder : %s" % home_dir)

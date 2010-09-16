@@ -16,8 +16,6 @@ set incsearch
 set ruler
 set visualbell
 set noerrorbells
-set nobackup
-set noswapfile
 set ignorecase
 set smartcase
 set ttyfast
@@ -30,6 +28,7 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set title
 set backspace=indent,eol,start
 set dir=~/.vim/swap
+set backupdir=~/.vim/backup
 set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 set pastetoggle=<F2>

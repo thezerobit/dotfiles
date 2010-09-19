@@ -1,2 +1,6 @@
 *.swp
 .netrwhist
+*.o
+*.so
+*.log
+.vim/ruby/command-t/Makefile

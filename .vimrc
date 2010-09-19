@@ -38,6 +38,7 @@ filetype plugin on
 filetype indent on
 if has('autocmd')
     autocmd filetype python set expandtab
+    autocmd filetype markdown setlocal textwidth=72
 endif
 
 " Easy window navigation

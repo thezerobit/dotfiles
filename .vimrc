@@ -47,8 +47,8 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-" clear highlighted searches with ,/
-nmap <silent> ,/ :let @/=""<CR>
+" Remove search highlights
+nnoremap <silent><leader><space> :noh<cr>
 
 " NERDTree stuff
 nmap ,n :NERDTreeClose<CR>:NERDTreeToggle<CR>

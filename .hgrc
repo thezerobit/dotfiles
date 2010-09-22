@@ -1,6 +1,7 @@
 [ui]
 username = Steve Goss <sgoss@kavi.com>
 merge = internal:merge
+editor = vim
 
 [trusted]
 users = web

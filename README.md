@@ -44,6 +44,7 @@ Other included vim plugins are:
 * [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658)
 * [snipMate](http://www.vim.org/scripts/script.php?script_id=2540)
 * [Markdown](http://www.vim.org/scripts/script.php?script_id=2882)
+* [Command-T](http://www.vim.org/scripts/script.php?script_id=3025)
 * and possibly others
 
 .bashrc

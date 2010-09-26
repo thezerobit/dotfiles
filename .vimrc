@@ -3,11 +3,12 @@ set nocompatible
 set hidden
 set nowrap
 "set number "line numbers
-set tabstop=4
-set shiftwidth=4
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
 set shiftround
 set smarttab
-set softtabstop=4
 set autoindent
 set smartindent
 set showcmd
@@ -37,8 +38,10 @@ filetype on
 filetype plugin on
 filetype indent on
 if has('autocmd')
-    autocmd filetype python set expandtab
     autocmd filetype markdown setlocal textwidth=72
+    autocmd filetype python setlocal tabstop=4
+    autocmd filetype python setlocal shiftwidth=4
+    autocmd filetype python setlocal softtabstop=4
 endif
 
 " Easy window navigation

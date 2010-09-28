@@ -42,6 +42,9 @@ if has('autocmd')
     autocmd filetype python setlocal tabstop=4
     autocmd filetype python setlocal shiftwidth=4
     autocmd filetype python setlocal softtabstop=4
+    autocmd filetype php setlocal tabstop=4
+    autocmd filetype php setlocal shiftwidth=4
+    autocmd filetype php setlocal softtabstop=4
 endif
 
 " Easy window navigation

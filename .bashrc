@@ -102,3 +102,7 @@ fi #
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 PATH=~/bin:$PATH
+
+DEBFULLNAME="Stephen A. Goss"
+DEBEMAIL="steveth45@gmail.com"
+

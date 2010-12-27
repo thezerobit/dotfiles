@@ -45,6 +45,9 @@ if has('autocmd')
     autocmd filetype php setlocal tabstop=4
     autocmd filetype php setlocal shiftwidth=4
     autocmd filetype php setlocal softtabstop=4
+    autocmd filetype javascript setlocal tabstop=4
+    autocmd filetype javascript setlocal shiftwidth=4
+    autocmd filetype javascript setlocal softtabstop=4
 endif
 
 " Easy window navigation

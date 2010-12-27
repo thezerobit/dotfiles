@@ -101,7 +101,7 @@ fi
 fi # 
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
-PATH=~/bin:$PATH
+export PATH=~/opt/bin:~/bin:$PATH
 
 DEBFULLNAME="Stephen A. Goss"
 DEBEMAIL="steveth45@gmail.com"

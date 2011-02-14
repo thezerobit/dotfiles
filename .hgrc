@@ -24,6 +24,8 @@ hgext.mq =
 # hgext.shelve = ~/plugins/hgshelve/hgshelve.py
 # enable bookmarks extension
 hgext.bookmarks=
+# enable localbranches
+hgext.localbranch = ~/plugins/localbranch/localbranch.py
 
 [bookmarks]
 track.current = True

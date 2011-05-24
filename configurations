@@ -1,4 +1,23 @@
 # just software build configurations
 
+mkdir ~/build
+
 # GNU screen
+cd ~/build
+git clone git://git.savannah.gnu.org/screen.git
+cd screen/src
 ./configure --enable-colors256 --prefix=${HOME}/opt
+
+# Ruby 1.9.2
+cd ~/build
+wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p180.tar.gz
+tar -xvzf ruby-1.9.2-p180.tar.gz
+cd ruby-1.9.2-p180
+./configure --prefix=${HOME}/opt
+
+# vim
+cd ~/build
+hg clone https://vim.googlecode.com/hg/ vim
+cd vim/src
+./configure --prefix=${HOME}/opt --enable-rubyinterp --disable-netbeans
+

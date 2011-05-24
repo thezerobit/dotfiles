@@ -85,8 +85,3 @@ com W w
 com Wq wq
 com WQ wq
 
-" repurpose arrows
-map <down> <C-f>
-map <silent><left> <ESC>:bp<RETURN>
-map <silent><right> <ESC>:bn<RETURN>
-map <up> <C-b>

@@ -102,6 +102,8 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
+export TERM='xterm-256color'
+
 fi #
 
 [[ -s "/home/steve/.rvm/scripts/rvm" ]] && source "/home/steve/.rvm/scripts/rvm"

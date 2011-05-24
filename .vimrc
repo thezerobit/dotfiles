@@ -34,6 +34,8 @@ set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 set pastetoggle=<F2>
 
+colo darkburn
+
 filetype on
 filetype plugin on
 filetype indent on

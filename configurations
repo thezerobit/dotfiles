@@ -1,4 +1,4 @@
 # just software build configurations
 
 # GNU screen
-./configure --enable-colors256 --prefix=/home/steve/opt
+./configure --enable-colors256 --prefix=${HOME}/opt

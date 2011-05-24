@@ -10,6 +10,9 @@ import os, shutil, stat
 dotfiles_dir = os.path.dirname(os.path.realpath(__file__))
 home_dir = os.path.expanduser("~")
 
+def should_ask(filename):
+    return filename.startswith('.bash') or filename.endswith('profile')
+
 print("dotfiles in this folder : %s" % dotfiles_dir)
 dotfiles = set(os.listdir(dotfiles_dir))
 dotfiles = dotfiles - set(['.git', 'make_links.py', '.gitignore', 'README.md'])
@@ -21,6 +24,10 @@ if not os.path.isdir(backup_folder_path):
     print("creating backup folder : %s" % backup_folder_path)
     os.mkdir(backup_folder_path)
 for filename in dotfiles:
+    if should_ask(filename):
+        answer = raw_input('Symlink %s ? ' % filename)
+        if not answer in ['y', 'Y']:
+            continue
     print("processing %s ..." % filename)
     target = os.path.join(home_dir, filename)
     dotfile = os.path.join(dotfiles_dir, filename)

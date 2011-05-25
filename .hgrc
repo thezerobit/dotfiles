@@ -24,6 +24,10 @@ hgext.mq =
 # hgext.shelve = ~/plugins/hgshelve/hgshelve.py
 # enable bookmarks extension
 hgext.bookmarks=
+# enable localbranches
+# hgext.localbranch = ~/plugins/localbranch/localbranch.py
+# hgext.localbranch = /export/play/devtools/hg-extensions/jmurty-localbranch-r38.py
+hgext.rebase=
 
 [bookmarks]
 track.current = True

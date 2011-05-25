@@ -45,6 +45,9 @@ if has('autocmd')
     autocmd filetype php setlocal tabstop=4
     autocmd filetype php setlocal shiftwidth=4
     autocmd filetype php setlocal softtabstop=4
+    autocmd filetype javascript setlocal tabstop=4
+    autocmd filetype javascript setlocal shiftwidth=4
+    autocmd filetype javascript setlocal softtabstop=4
 endif
 
 " Easy window navigation
@@ -82,8 +85,3 @@ com W w
 com Wq wq
 com WQ wq
 
-" repurpose arrows
-map <down> <C-f>
-map <silent><left> <ESC>:bp<RETURN>
-map <silent><right> <ESC>:bn<RETURN>
-map <up> <C-b>

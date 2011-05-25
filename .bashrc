@@ -104,10 +104,11 @@ fi
 
 export TERM='xterm-256color'
 
+PATH=$HOME/opt:$HOME/bin:$PATH
+
+[[ -s $HOME/.bash_local ]] && source $HOME/.bash_local
+
 fi #
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 
-PATH=~/bin:$PATH
-
-[[ -s $HOME/.bash_local ]] && source $HOME/.bash_local

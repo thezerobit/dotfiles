@@ -104,7 +104,7 @@ fi
 
 export TERM='xterm-256color'
 
-PATH=$HOME/opt:$HOME/bin:$PATH
+PATH=$HOME/opt/bin:$HOME/bin:$PATH
 
 [[ -s $HOME/.bash_local ]] && source $HOME/.bash_local
 

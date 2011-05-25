@@ -102,3 +102,5 @@ fi #
 
 [[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
 PATH=~/bin:$PATH
+
+[[ -s $HOME/.bash_local ]] && source $HOME/.bash_local

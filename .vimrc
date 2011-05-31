@@ -21,7 +21,6 @@ set ignorecase
 set smartcase
 set ttyfast
 set showmatch
-set background=dark
 set mouse=a
 set history=1000
 set undolevels=1000
@@ -34,7 +33,6 @@ set list
 set listchars=tab:>.,trail:.,extends:#,nbsp:.
 set pastetoggle=<F2>
 
-colo darkburn
 
 filetype on
 filetype plugin on
@@ -81,7 +79,12 @@ let NERDTreeHighlightCursorline=1 " Highlight the selected entry in the tree
 let NERDTreeMouseMode=2           " Use a single click to fold/unfold directories
                                   " and a double click to open files
 
+syntax enable
+set background=dark
+colo darkburn
+
 syntax on
+
 com Q q
 com W w
 com Wq wq

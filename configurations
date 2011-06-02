@@ -1,11 +1,14 @@
 # just software build configurations
 
+mkdir ~/opt
 mkdir ~/build
 
 # GNU screen
 cd ~/build
 git clone git://git.savannah.gnu.org/screen.git
 cd screen/src
+./autogen.sh
+./autogen.sh
 ./configure --enable-colors256 --prefix=${HOME}/opt
 make
 make install

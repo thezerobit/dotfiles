@@ -15,7 +15,7 @@ def should_ask(filename):
 
 print("dotfiles in this folder : %s" % dotfiles_dir)
 dotfiles = set(os.listdir(dotfiles_dir))
-dotfiles = dotfiles - set(['.git', 'make_links.py', '.gitignore', 'README.md'])
+dotfiles = dotfiles - set(['.git', 'make_links.py', '.gitignore', 'README.md', 'configurations'])
 dotfiles = list(dotfiles)
 print("\n".join(dotfiles))
 print("target home folder : %s" % home_dir)

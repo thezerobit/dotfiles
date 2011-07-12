@@ -20,14 +20,5 @@ transplant=
 hgext.color=
 # enable MqExtension: http://mercurial.selenic.com/wiki/MqExtension
 hgext.mq =
-# enable shelve extension
-# hgext.shelve = ~/plugins/hgshelve/hgshelve.py
-# enable bookmarks extension
-hgext.bookmarks=
-# enable localbranches
-# hgext.localbranch = ~/plugins/localbranch/localbranch.py
-# hgext.localbranch = /export/play/devtools/hg-extensions/jmurty-localbranch-r38.py
+# enable rebase
 hgext.rebase=
-
-[bookmarks]
-track.current = True

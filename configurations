@@ -16,6 +16,8 @@ make
 make install
 
 # Ruby 1.9.2
+# Centos option:
+# sudo yum install ruby ruby-devel ruby-ri
 cd ~/build
 wget http://ftp.ruby-lang.org/pub/ruby/1.9/ruby-1.9.2-p180.tar.gz
 tar -xvzf ruby-1.9.2-p180.tar.gz

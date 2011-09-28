@@ -4,11 +4,13 @@ mkdir ~/opt
 mkdir ~/build
 
 # GNU screen
+# Centos:
+# sudo yum install ncurses-devel
 cd ~/build
 git clone git://git.savannah.gnu.org/screen.git
 cd screen/src
 ./autogen.sh
-./autogen.sh
+# ./autogen.sh # maybe run a second time?
 ./configure --enable-colors256 --prefix=${HOME}/opt
 make
 make install

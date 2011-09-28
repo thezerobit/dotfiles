@@ -81,8 +81,8 @@ let NERDTreeMouseMode=2           " Use a single click to fold/unfold directorie
 let CommandTMaxFiles = 30000
 
 syntax enable
-set background=dark
-colo darkburn
+" set background=dark
+" colo darkburn
 
 syntax on
 

@@ -82,7 +82,7 @@ let CommandTMaxFiles = 30000
 
 syntax enable
 " set background=dark
-" colo darkburn
+colo darkburn
 
 syntax on
 
@@ -91,3 +91,10 @@ com W w
 com Wq wq
 com WQ wq
 
+" Settings for VimClojure
+let vimclojure#HighlightBuiltins = 1
+let vimclojure#ParenRainbow = 1
+let vimclojure#WantNailgun = 1
+let vimclojure#NailgunClient = "/home/steve/opt/bin/ng"
+
+set encoding=utf-8

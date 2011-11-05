@@ -30,7 +30,7 @@ make install
 cd ~/build
 hg clone https://vim.googlecode.com/hg/ vim
 cd vim/src
-./configure --prefix=${HOME}/opt --enable-rubyinterp --disable-netbeans
+./configure --prefix=${HOME}/opt --enable-rubyinterp --disable-netbeans --enable-multibyte
 make
 make install
 

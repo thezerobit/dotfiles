@@ -30,14 +30,18 @@ platform you are on. It requires Ruby and Ruby development files. On
 Ubuntu, you can get the dependencies with
 this line:
 
-`sudo apt-get install ruby1.8 ruby1.8-dev`
+`sudo apt-get install ruby-dev`
 
-Then, to build the module, cd into the .vim/ruby/command-t folder and
-run the following commands:
+Then, to build the module, cd into the
+`.vim/bundle/command-t/ruby/command-t` folder and run the following
+commands:
 
 `ruby extconf.rb && make`
 
 That's all you should need to get that working.
+
+The vim plugins are now managed as submodules in the `.vim/bundle`
+folder and are loaded with pathogen.
 
 Other included vim plugins are:
 

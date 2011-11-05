@@ -8,6 +8,7 @@ OPTIONS=dogname:Slinky
 OPTIONS=catname:Rex
 OPTIONS=pickup_types:$
 OPTIONS=nomail
+OPTIONS=autodig
 
 # Enable this if you want to see your inventory sorted in alphabetical
 # order by item instead of by index letter:

@@ -32,9 +32,25 @@ set backspace=indent,eol,start
 set dir=~/.vim/swap
 set backupdir=~/.vim/backup
 set list
-set listchars=tab:>.,trail:.,extends:#,nbsp:.
 set pastetoggle=<F2>
 
+" digraphs
+
+digraph im 8658 " ⇒ implies
+digraph eq 8660 " ⇔ equivalent
+digraph no 172  " ¬ not
+digraph an 8743 " ∧ and
+digraph or 8744 " ∨ or
+digraph fa 8704 " ∀ for all
+digraph te 8707 " ∃ there exists
+
+" crap I stole from @tpope
+set laststatus=2 " Always show status line
+if (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8') && version >= 700
+  let &listchars = "tab:\u21e5\u00b7,trail:\u2423,extends:\u21c9,precedes:\u21c7,nbsp:\u26ad"
+else
+  set listchars=tab:>\ ,trail:-,extends:>,precedes:<
+endif
 
 filetype on
 filetype plugin on

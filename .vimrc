@@ -118,4 +118,6 @@ let vimclojure#NailgunClient = "/home/steve/opt/bin/ng"
 set encoding=utf-8
 
 " Settings for ack.vim
-let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+if executable('ack-grep')
+  let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+endif

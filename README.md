@@ -53,6 +53,11 @@ Other included vim plugins are:
 * [ack.vim](https://github.com/mileszs/ack.vim)
 * and possibly others
 
+In order to actually get those submodules to install, I _think_ this is
+the best way:
+
+`git submodule init && git submodule update`
+
 .bashrc
 -------
 

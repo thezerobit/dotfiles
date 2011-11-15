@@ -1,11 +1,7 @@
 [ui]
-username = Steve Goss <sgoss@kavi.com>
+username = Stephen A. Goss <steveth45@gmail.com>
 merge = internal:merge
 editor = vim
-
-[trusted]
-users = web
-group = web
 
 [extensions]
 # Get rid of annoying "failed to import extension hgext/hct" errors:

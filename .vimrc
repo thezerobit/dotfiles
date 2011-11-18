@@ -26,13 +26,26 @@ set showmatch
 set mouse=a
 set history=1000
 set undolevels=1000
-set wildignore=*.swp,*.bak,*.pyc,*.class
 set title
 set backspace=indent,eol,start
-set dir=~/.vim/swap
-set backupdir=~/.vim/backup
 set list
 set pastetoggle=<F2>
+
+" directories for backups
+set dir=~/.vim/tmp/swap
+set undodir=~/.vim/tmp/undo
+set backupdir=~/.vim/tmp/backup
+set backup
+
+" wildmenu
+set wildmenu
+set wildmode=list:longest
+set wildignore+=*.swp,*.bak,*.pyc,*.class
+set wildignore+=*.DS_Store
+set wildignore+=classes
+
+" Resize splits when the window is resized
+au VimResized * exe "normal! \<c-w>="
 
 " digraphs
 
@@ -68,6 +81,12 @@ if has('autocmd')
     autocmd filetype javascript setlocal softtabstop=4
 endif
 
+" Syntax highlighting / color
+syntax enable
+" set background=dark
+colo darkburn
+syntax on
+
 " Easy window navigation
 map <C-h> <C-w>h
 map <C-j> <C-w>j
@@ -96,13 +115,9 @@ let NERDTreeQuitOnOpen=1          " Quit on opening files from the tree
 let NERDTreeHighlightCursorline=1 " Highlight the selected entry in the tree
 let NERDTreeMouseMode=2           " Use a single click to fold/unfold directories
                                   " and a double click to open files
+
+" Command-T settings:
 let CommandTMaxFiles = 30000
-
-syntax enable
-" set background=dark
-colo darkburn
-
-syntax on
 
 com Q q
 com W w

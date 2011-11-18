@@ -30,6 +30,7 @@ set title
 set backspace=indent,eol,start
 set list
 set pastetoggle=<F2>
+set colorcolumn=80
 
 " directories for backups
 set dir=~/.vim/tmp/swap
@@ -46,6 +47,9 @@ set wildignore+=classes
 
 " Resize splits when the window is resized
 au VimResized * exe "normal! \<c-w>="
+
+" Don't move on *
+nnoremap * *<c-o>
 
 " digraphs
 

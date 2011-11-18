@@ -51,6 +51,9 @@ au VimResized * exe "normal! \<c-w>="
 " Don't move on *
 nnoremap * *<c-o>
 
+" we have a new leader
+let mapleader = ";"
+
 " digraphs
 
 digraph im 8658 " ⇒ implies

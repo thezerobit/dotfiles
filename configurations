@@ -28,6 +28,7 @@ make install
 
 # vim
 # Centos: sudo yum install ncurses-devel
+# Ubuntu: sudo aptitude install ruby1.9.1-full ruby1.9.1-dev ncurses-dev
 cd ~/build
 hg clone https://vim.googlecode.com/hg/ vim
 cd vim/src

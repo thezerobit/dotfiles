@@ -43,7 +43,6 @@ set wildmenu
 set wildmode=list:longest
 set wildignore+=*.swp,*.bak,*.pyc,*.class
 set wildignore+=*.DS_Store
-set wildignore+=classes
 
 " Resize splits when the window is resized
 au VimResized * exe "normal! \<c-w>="

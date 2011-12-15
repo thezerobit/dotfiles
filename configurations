@@ -4,7 +4,7 @@
 sudo apt-get install git mercurial screen ruby1.9.1-full ruby1.9.1-dev ncurses-dev
 
 # We can have nice things
-sudo apt-get install rlwrap
+sudo apt-get install rlwrap tree
 
 # useful folders
 mkdir -p ~/opt/bin

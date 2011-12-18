@@ -4,7 +4,7 @@
 sudo apt-get install git mercurial screen ruby1.9.1-full ruby1.9.1-dev ncurses-dev
 
 # We can have nice things
-sudo apt-get install rlwrap tree
+sudo apt-get install rlwrap tree curl
 
 # useful folders
 mkdir -p ~/opt/bin
@@ -54,6 +54,12 @@ cp lein-nailgun-1.1.1.jar ~/.lein/plugins/
 #                  [vimclojure/server "2.3.0"]
 # `lein deps`
 # `lein nailgun`
+
+# clojurescript
+cd ~/projects
+git clone git://github.com/clojure/clojurescript.git
+cd clojurescript
+./script/bootstrap
 
 # Chicken Scheme
 cd ~/build

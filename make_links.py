@@ -5,6 +5,8 @@ and replace with symlinks to files in dotfiles folder.
 
 copyright 2010 Stephen A. Goss
 '''
+from __future__ import print_function
+
 import os, shutil, stat
 
 dotfiles_dir = os.path.dirname(os.path.realpath(__file__))
@@ -15,7 +17,7 @@ def should_ask(filename):
 
 print("dotfiles in this folder : %s" % dotfiles_dir)
 dotfiles = set(os.listdir(dotfiles_dir))
-dotfiles = dotfiles - set(['.git', 'make_links.py', '.gitignore', 'README.md', 'configurations'])
+dotfiles = dotfiles - set(['.git', 'make_links.py', '.gitignore', 'README.md', 'configurations','profiles'])
 dotfiles = list(dotfiles)
 print("\n".join(dotfiles))
 print("target home folder : %s" % home_dir)

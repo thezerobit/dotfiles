@@ -1,10 +1,10 @@
 # just software build configurations
 
 # Ubuntu/Mint prerequisites
-sudo apt-get install git mercurial screen ruby1.9.1-full ruby1.9.1-dev ncurses-dev
+sudo apt-get install git mercurial screen ruby1.9.1-full ruby1.9.1-dev ncurses-dev rlwrap tree curl
 
-# We can have nice things
-sudo apt-get install rlwrap tree curl
+# Centos is important, too
+sudo yum install ruby ruby-devel ruby-ri
 
 # useful folders
 mkdir -p ~/opt/bin

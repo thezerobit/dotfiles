@@ -22,8 +22,10 @@ make
 # vim
 # Centos: sudo yum install ncurses-devel
 cd ~/build
-hg clone https://vim.googlecode.com/hg/ vim
-cd vim/src
+# hg clone https://vim.googlecode.com/hg/ vim
+wget ftp://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2
+tar -xvBf vim-7.3.tar.bz2
+cd vim73/src
 ./configure --prefix=${HOME}/opt --enable-rubyinterp --disable-netbeans --enable-multibyte
 make
 make install

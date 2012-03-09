@@ -56,8 +56,9 @@ def link_files(files, file_dir):
 if __name__ == '__main__':
     dotfiles_dir = dirname(realpath(__file__))
     print("dotfiles in this folder : %s" % dotfiles_dir)
-    dotfiles = set(os.listdir(dotfiles_dir))
-    dotfiles = dotfiles - set(['.git', 'make_links.py', '.gitignore', 'README.md', 'configurations','profiles'])
+    dotfiles = os.listdir(dotfiles_dir)
+    dotfiles = filter(lambda x: x.startswith('.'), dotfiles)
+    dotfiles = set(dotfiles) - set(['.git', '.gitignore'])
     dotfiles = list(dotfiles)
     print("\n".join(dotfiles))
 

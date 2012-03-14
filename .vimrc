@@ -151,3 +151,6 @@ function! <SID>SynStack()
   endif
   echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 endfunc
+
+" Set filetypes
+au BufRead,BufNewFile *.smarty.html set filetype=smarty

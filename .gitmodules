@@ -30,4 +30,4 @@
 	url = git://github.com/tpope/vim-commentary.git
 [submodule ".vim/bundle/smarty.vim"]
 	path = .vim/bundle/smarty.vim
-	url = git://github.com/vim-scripts/smarty.vim.git
+	url = git://github.com/deliciousrobots/smarty.vim.git

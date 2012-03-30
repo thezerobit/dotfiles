@@ -7,3 +7,4 @@ PATH=$HOME/opt/bin:$PATH
 export TERM='xterm-256color'
 # [[ -s $HOME/.bash_local ]] && source $HOME/.bash_local
 
+source $HOME/50_prompt.sh

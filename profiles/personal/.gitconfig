@@ -1,5 +1,7 @@
 [user]
-	name = Stephen A. Goss
-	email = steveth45@gmail.com
+  name = Stephen A. Goss
+  email = steveth45@gmail.com
 [color]
-	ui = true
+  ui = true
+[push]
+  default = current

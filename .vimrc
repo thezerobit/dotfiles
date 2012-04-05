@@ -76,6 +76,7 @@ filetype plugin on
 filetype indent on
 if has('autocmd')
     autocmd filetype markdown setlocal textwidth=72
+    autocmd filetype markdown setlocal fo=atq
     autocmd filetype python setlocal tabstop=4
     autocmd filetype python setlocal shiftwidth=4
     autocmd filetype python setlocal softtabstop=4

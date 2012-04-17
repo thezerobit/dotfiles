@@ -6,3 +6,4 @@
 *.log
 .vim/ruby/command-t/Makefile
 *~
+.vim/tmp/*

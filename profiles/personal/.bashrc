@@ -1,5 +1,6 @@
 # Ubuntu got it wrong
 alias ack='ack-grep'
+alias ls='ls --color=auto'
 
 # I install things with --prefix=$HOME/opt
 PATH=$HOME/opt/bin:$PATH

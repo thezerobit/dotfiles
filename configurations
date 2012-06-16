@@ -1,7 +1,8 @@
 # just software build configurations
 
 # Ubuntu/Mint prerequisites
-sudo apt-get install git mercurial screen ruby1.9.1-full ruby1.9.1-dev ncurses-dev rlwrap tree curl
+sudo apt-get install git mercurial screen ruby1.9.1-full \
+  ruby1.9.1-dev ncurses-dev rlwrap tree curl python-dev
 
 # Centos is important, too
 sudo yum install ruby ruby-devel ruby-ri
@@ -26,7 +27,7 @@ cd ~/build
 wget ftp://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2
 tar -xvBf vim-7.3.tar.bz2
 cd vim73/src
-./configure --prefix=${HOME}/opt --enable-rubyinterp --disable-netbeans --enable-multibyte
+./configure --prefix=${HOME}/opt --enable-rubyinterp --disable-netbeans --enable-multibyte --enable-pythoninterp=yes
 make
 make install
 

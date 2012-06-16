@@ -155,3 +155,6 @@ endfunc
 
 " Set filetypes
 au BufRead,BufNewFile *.smarty.html set filetype=smarty
+
+" slimv / lisp / paredit
+let g:lisp_rainbow=1 " multi-color matched parens

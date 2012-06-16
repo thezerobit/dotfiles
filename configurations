@@ -21,13 +21,23 @@ ruby extconf.rb
 make
 
 # vim
+# Ubuntu:
+sudo apt-get build-dep vim-gnome
+sudo apt-get install ruby1.9.1-full ruby1.9.1-dev
+sudo apt-get remove ruby1.8-dev ruby1.8 # yuck
+sudo apt-get autoremove
 # Centos: sudo yum install ncurses-devel
 cd ~/build
 # hg clone https://vim.googlecode.com/hg/ vim
 wget ftp://ftp.vim.org/pub/vim/unix/vim-7.3.tar.bz2
 tar -xvBf vim-7.3.tar.bz2
 cd vim73/src
-./configure --prefix=${HOME}/opt --enable-rubyinterp --disable-netbeans --enable-multibyte --enable-pythoninterp=yes
+./configure --prefix=${HOME}/opt --enable-rubyinterp --disable-netbeans \
+  --enable-multibyte --enable-pythoninterp=yes --with-features=huge \
+  --enable-gui=auto
+# no GUI:
+# ./configure --prefix=${HOME}/opt --enable-rubyinterp --disable-netbeans \
+#   --enable-multibyte --enable-pythoninterp=yes
 make
 make install
 

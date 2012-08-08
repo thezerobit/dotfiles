@@ -10,9 +10,6 @@
 [submodule ".vim/bundle/vimclojure"]
 	path = .vim/bundle/vimclojure
 	url = git://github.com/vim-scripts/VimClojure.git
-[submodule ".vim/bundle/command-t"]
-	path = .vim/bundle/command-t
-	url = git://github.com/wincent/Command-T.git
 [submodule ".vim/bundle/NERD_tree"]
 	path = .vim/bundle/NERD_tree
 	url = git://github.com/vim-scripts/The-NERD-tree.git
@@ -37,3 +34,6 @@
 [submodule ".vim/bundle/slimv.vim"]
 	path = .vim/bundle/slimv.vim
 	url = git://github.com/vim-scripts/slimv.vim.git
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = git://github.com/deliciousrobots/ctrlp.vim.git

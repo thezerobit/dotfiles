@@ -15,10 +15,6 @@ mkdir ~/build
 cd ~/projects/dotfiles
 git submodule init
 git submodule update
-# build Command-T
-cd .vim/bundle/command-t/ruby/command-t
-ruby extconf.rb
-make
 
 # vim
 # Ubuntu:

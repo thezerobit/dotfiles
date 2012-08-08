@@ -123,9 +123,6 @@ let NERDTreeHighlightCursorline=1 " Highlight the selected entry in the tree
 let NERDTreeMouseMode=2           " Use a single click to fold/unfold directories
                                   " and a double click to open files
 
-" Command-T settings:
-let CommandTMaxFiles = 30000
-
 com Q q
 com W w
 com Wq wq

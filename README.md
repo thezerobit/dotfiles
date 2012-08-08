@@ -24,22 +24,6 @@ handling.
 This is a big part of the reason for the dotfiles repository. I have
 spent some time refining my Vim configuration for maximum efficiency.
 
-In order to use the [Command-T](http://wincent.com/products/command-t)
-plugin, it has a small C component which must be built for whatever
-platform you are on. It requires Ruby and Ruby development files. On
-Ubuntu, you can get the dependencies with
-this line:
-
-`sudo apt-get install ruby-dev`
-
-Then, to build the module, cd into the
-`.vim/bundle/command-t/ruby/command-t` folder and run the following
-commands:
-
-`ruby extconf.rb && make`
-
-That's all you should need to get that working.
-
 The vim plugins are now managed as submodules in the `.vim/bundle`
 folder and are loaded with pathogen.
 
@@ -48,7 +32,6 @@ Other included vim plugins are:
 * [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658)
 * [snipMate](http://www.vim.org/scripts/script.php?script_id=2540)
 * [Markdown](http://www.vim.org/scripts/script.php?script_id=2882)
-* [Command-T](http://www.vim.org/scripts/script.php?script_id=3025)
 * [VimClojure](https://github.com/vim-scripts/VimClojure)
 * [ack.vim](https://github.com/mileszs/ack.vim)
 * and possibly others

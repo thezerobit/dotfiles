@@ -10,9 +10,6 @@
 [submodule ".vim/bundle/vimclojure"]
 	path = .vim/bundle/vimclojure
 	url = git://github.com/vim-scripts/VimClojure.git
-[submodule ".vim/bundle/NERD_tree"]
-	path = .vim/bundle/NERD_tree
-	url = git://github.com/vim-scripts/The-NERD-tree.git
 [submodule ".vim/bundle/snipmate"]
 	path = .vim/bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git

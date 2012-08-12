@@ -19,9 +19,6 @@
 [submodule ".vim/bundle/repeat.vim"]
 	path = .vim/bundle/repeat.vim
 	url = git://github.com/tpope/vim-repeat.git
-[submodule ".vim/bundle/commentary"]
-	path = .vim/bundle/commentary
-	url = git://github.com/tpope/vim-commentary.git
 [submodule ".vim/bundle/smarty.vim"]
 	path = .vim/bundle/smarty.vim
 	url = git://github.com/deliciousrobots/smarty.vim.git
@@ -34,3 +31,6 @@
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = git://github.com/deliciousrobots/ctrlp.vim.git
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter
+	url = git@github.com:deliciousrobots/nerdcommenter.git

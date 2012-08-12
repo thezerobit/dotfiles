@@ -29,7 +29,7 @@ set undolevels=1000
 set title
 set backspace=indent,eol,start
 set list
-set pastetoggle=<F2>
+set pastetoggle=<F4>
 set colorcolumn=80
 
 " directories for backups

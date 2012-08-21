@@ -135,3 +135,28 @@ au BufRead,BufNewFile *.smarty.html set filetype=smarty
 
 " slimv / lisp / paredit
 let g:lisp_rainbow=1 " multi-color matched parens
+
+" Wrap mode adapted from http://vim.wikia.com/wiki/VimTip38
+noremap <silent> <Leader>w :call ToggleWrap()<CR>
+function ToggleWrap()
+  if &wrap
+    echo "Wrap OFF"
+    setlocal nowrap
+    set virtualedit=all
+    silent! nunmap <buffer> k
+    silent! nunmap <buffer> j
+    silent! nunmap <buffer> 0
+    silent! nunmap <buffer> $
+    setlocal colorcolumn=80 " TODO: make more robust
+  else
+    echo "Wrap ON"
+    setlocal wrap linebreak nolist
+    set virtualedit=
+    setlocal display+=lastline
+    noremap  <buffer> <silent> k gk
+    noremap  <buffer> <silent> j gj
+    noremap  <buffer> <silent> 0 g0
+    noremap  <buffer> <silent> $ g$
+    setlocal colorcolumn=0 " TODO: make more robust
+  endif
+endfunction

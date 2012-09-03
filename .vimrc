@@ -16,7 +16,6 @@ Bundle 'gmarik/vundle'
 Bundle 'deliciousrobots/vimfiles'
 "
 " 3rd party bundles:
-Bundle 'vim-scripts/bufexplorer'
 Bundle 'mileszs/ack.vim.git'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'

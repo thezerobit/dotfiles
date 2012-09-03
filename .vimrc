@@ -1,6 +1,33 @@
 set nocompatible
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+" runtime bundle/vim-pathogen/autoload/pathogen.vim
+" call pathogen#infect()
+
+" let Vundle manage Vundle
+" required!
+
+Bundle 'gmarik/vundle'
+
+" My bundles here:
+Bundle 'deliciousrobots/vimfiles'
+"
+" 3rd party bundles:
+Bundle 'vim-scripts/bufexplorer'
+Bundle 'mileszs/ack.vim.git'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat'
+Bundle 'deliciousrobots/smarty.vim'
+Bundle 'vim-scripts/slimv.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'kien/ctrlp.vim'
+" temporarily disabled bundles:
+" Bundle 'vim-scripts/VimClojure'
+
+filetype plugin indent on     " required!
 
 set hidden
 set nowrap

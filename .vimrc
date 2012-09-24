@@ -1,6 +1,32 @@
 set nocompatible
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-call pathogen#infect()
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+" runtime bundle/vim-pathogen/autoload/pathogen.vim
+" call pathogen#infect()
+
+" let Vundle manage Vundle
+" required!
+
+Bundle 'gmarik/vundle'
+
+" My bundles here:
+Bundle 'deliciousrobots/vimfiles'
+"
+" 3rd party bundles:
+Bundle 'mileszs/ack.vim.git'
+Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-repeat'
+Bundle 'deliciousrobots/smarty.vim'
+Bundle 'vim-scripts/slimv.vim'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'kien/ctrlp.vim'
+" temporarily disabled bundles:
+" Bundle 'vim-scripts/VimClojure'
+
+filetype plugin indent on     " required!
 
 set hidden
 set nowrap
@@ -29,7 +55,7 @@ set undolevels=1000
 set title
 set backspace=indent,eol,start
 set list
-set pastetoggle=<F2>
+set pastetoggle=<F4>
 set colorcolumn=80
 
 " directories for backups
@@ -103,26 +129,6 @@ map <C-l> <C-w>l
 " Remove search highlights
 nnoremap <silent><leader><space> :noh<cr>
 
-" NERDTree stuff
-nmap ,n :NERDTreeClose<CR>:NERDTreeToggle<CR>
-nmap ,m :NERDTreeClose<CR>:NERDTreeFind<CR>
-nmap ,N :NERDTreeClose<CR>
-
-" Store the bookmarks file
-let NERDTreeBookmarksFile=expand("$HOME/.vim/NERDTreeBookmarks")
-
-" Don't display these kinds of files
-let NERDTreeIgnore=[ '\.pyc$', '\.pyo$', '\.py\$class$', '\.obj$',
-            \ '\.o$', '\.so$', '\.egg$', '^\.git$' ]
-
-let NERDTreeShowBookmarks=1       " Show the bookmarks table on startup
-let NERDTreeShowFiles=1           " Show hidden files, too
-let NERDTreeShowHidden=1
-let NERDTreeQuitOnOpen=1          " Quit on opening files from the tree
-let NERDTreeHighlightCursorline=1 " Highlight the selected entry in the tree
-let NERDTreeMouseMode=2           " Use a single click to fold/unfold directories
-                                  " and a double click to open files
-
 com Q q
 com W w
 com Wq wq
@@ -155,3 +161,28 @@ au BufRead,BufNewFile *.smarty.html set filetype=smarty
 
 " slimv / lisp / paredit
 let g:lisp_rainbow=1 " multi-color matched parens
+
+" Wrap mode adapted from http://vim.wikia.com/wiki/VimTip38
+noremap <silent> <Leader>w :call ToggleWrap()<CR>
+function ToggleWrap()
+  if &wrap
+    echo "Wrap OFF"
+    setlocal nowrap
+    set virtualedit=all
+    silent! nunmap <buffer> k
+    silent! nunmap <buffer> j
+    silent! nunmap <buffer> 0
+    silent! nunmap <buffer> $
+    setlocal colorcolumn=80 " TODO: make more robust
+  else
+    echo "Wrap ON"
+    setlocal wrap linebreak nolist
+    set virtualedit=
+    setlocal display+=lastline
+    noremap  <buffer> <silent> k gk
+    noremap  <buffer> <silent> j gj
+    noremap  <buffer> <silent> 0 g0
+    noremap  <buffer> <silent> $ g$
+    setlocal colorcolumn=0 " TODO: make more robust
+  endif
+endfunction

@@ -10,9 +10,6 @@
 [submodule ".vim/bundle/vimclojure"]
 	path = .vim/bundle/vimclojure
 	url = git://github.com/vim-scripts/VimClojure.git
-[submodule ".vim/bundle/NERD_tree"]
-	path = .vim/bundle/NERD_tree
-	url = git://github.com/vim-scripts/The-NERD-tree.git
 [submodule ".vim/bundle/snipmate"]
 	path = .vim/bundle/snipmate
 	url = git://github.com/msanders/snipmate.vim.git
@@ -22,9 +19,6 @@
 [submodule ".vim/bundle/repeat.vim"]
 	path = .vim/bundle/repeat.vim
 	url = git://github.com/tpope/vim-repeat.git
-[submodule ".vim/bundle/commentary"]
-	path = .vim/bundle/commentary
-	url = git://github.com/tpope/vim-commentary.git
 [submodule ".vim/bundle/smarty.vim"]
 	path = .vim/bundle/smarty.vim
 	url = git://github.com/deliciousrobots/smarty.vim.git
@@ -37,3 +31,9 @@
 [submodule ".vim/bundle/ctrlp.vim"]
 	path = .vim/bundle/ctrlp.vim
 	url = git://github.com/deliciousrobots/ctrlp.vim.git
+[submodule ".vim/bundle/nerdcommenter"]
+	path = .vim/bundle/nerdcommenter
+	url = git@github.com:deliciousrobots/nerdcommenter.git
+[submodule ".vim/bundle/vundle"]
+	path = .vim/bundle/vundle
+	url = https://github.com/deliciousrobots/vundle.git

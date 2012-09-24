@@ -29,7 +29,6 @@ folder and are loaded with pathogen.
 
 Other included vim plugins are:
 
-* [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658)
 * [snipMate](http://www.vim.org/scripts/script.php?script_id=2540)
 * [Markdown](http://www.vim.org/scripts/script.php?script_id=2882)
 * [VimClojure](https://github.com/vim-scripts/VimClojure)

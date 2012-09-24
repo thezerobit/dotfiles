@@ -7,3 +7,8 @@ export TERM='xterm-256color'
 # [[ -s $HOME/.bash_local ]] && source $HOME/.bash_local
 
 PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+
+if [ -f ${HOME}/.bash_local ]; then
+  . ${HOME}/.bash_local
+fi
+

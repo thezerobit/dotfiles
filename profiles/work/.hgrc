@@ -3,6 +3,10 @@ username = Stephen A. Goss <sgoss@kavi.com>
 merge = internal:merge
 editor = vim
 
+[trusted]
+users = web
+group = web
+
 [extensions]
 # Get rid of annoying "failed to import extension hgext/hct" errors:
 hgext/hct=!

@@ -1,5 +1,3 @@
-# Ubuntu got it wrong
-alias ack='ack-grep'
 alias ls='ls --color'
 
 # I install things with --prefix=$HOME/opt

@@ -57,6 +57,7 @@ set backspace=indent,eol,start
 set list
 set pastetoggle=<F4>
 set colorcolumn=80
+set autochdir
 
 " directories for backups
 set dir=~/.vim/tmp/swap

@@ -59,7 +59,6 @@ if __name__ == '__main__':
     dotfiles = os.listdir(dotfiles_dir)
     dotfiles = filter(lambda x: x.startswith('.'), dotfiles)
     dotfiles = set(dotfiles) - set(['.git', '.gitignore'])
-    dotfiles = dotfiles | set(['50_prompt.sh'])
     dotfiles = list(dotfiles)
     print("\n".join(dotfiles))
 

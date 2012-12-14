@@ -24,21 +24,9 @@ handling.
 This is a big part of the reason for the dotfiles repository. I have
 spent some time refining my Vim configuration for maximum efficiency.
 
-The vim plugins are now managed as submodules in the `.vim/bundle`
-folder and are loaded with pathogen.
+Currently using vundle, get up and running with:
 
-Other included vim plugins are:
-
-* [snipMate](http://www.vim.org/scripts/script.php?script_id=2540)
-* [Markdown](http://www.vim.org/scripts/script.php?script_id=2882)
-* [VimClojure](https://github.com/vim-scripts/VimClojure)
-* [ack.vim](https://github.com/mileszs/ack.vim)
-* and possibly others
-
-In order to actually get those submodules to install, I _think_ this is
-the best way:
-
-`git submodule init && git submodule update`
+`./init_vim.sh`
 
 .bashrc
 -------

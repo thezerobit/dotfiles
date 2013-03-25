@@ -21,3 +21,8 @@ PS1='\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 if [ -f ${HOME}/.bash_local ]; then
 	. ${HOME}/.bash_local
 fi
+
+export KAVI_FS_ROOT=~/sydney
+alias vestart='source ~/bin/vectl'
+
+alias phoenix_start='unset KAVI_FS_ROOT && source /home/phoenix/phoenix-deploy/bin/activate'

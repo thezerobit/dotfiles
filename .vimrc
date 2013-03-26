@@ -20,7 +20,7 @@ Bundle 'mileszs/ack.vim.git'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-repeat'
 Bundle 'deliciousrobots/smarty.vim'
-Bundle 'vim-scripts/slimv.vim'
+Bundle 'deliciousrobots/slimv.vim'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'kien/ctrlp.vim'
 " temporarily disabled bundles:
@@ -162,6 +162,9 @@ au BufRead,BufNewFile *.smarty.html set filetype=smarty
 
 " slimv / lisp / paredit
 let g:lisp_rainbow=1 " multi-color matched parens
+" let g:slimv_preferred = 'clozure'
+" slimv repl syntax highlight seems broken
+let g:slimv_repl_syntax = 0
 
 " Wrap mode adapted from http://vim.wikia.com/wiki/VimTip38
 noremap <silent> <Leader>w :call ToggleWrap()<CR>
@@ -187,3 +190,4 @@ function ToggleWrap()
     setlocal colorcolumn=0 " TODO: make more robust
   endif
 endfunction
+

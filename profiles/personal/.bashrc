@@ -4,8 +4,12 @@ alias ls='ls --color=auto'
 
 # I want lisp
 alias lisp='rlwrap sbcl'
+alias shen='rlwrap shen'
+alias typed_racket='rlwrap racket -I typed/racket'
 
-PATH=$HOME/opt/bin:$PATH
+export PATH=$HOME/racket/bin:$HOME/opt/bin:$HOME/opt/mercury-14.01/bin:$HOME/opt/xsb-3.4.0/bin:$PATH
+
+export MANPATH=$HOME/opt/man:$HOME/opt/mercury-14.01/man:$MANPATH
 
 export TERM='xterm-256color'
 # [[ -s $HOME/.bash_local ]] && source $HOME/.bash_local
@@ -23,3 +27,4 @@ export CCL_DEFAULT_DIRECTORY=$HOME/build/ccl
 export LEIN_IRONIC_JURE=1
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

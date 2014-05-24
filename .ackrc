@@ -1,3 +1,5 @@
 --type-set=php=.inc,.php
 --type-set=clojure=.clj
 --type-set=mustache=.mustache
+--type-set=shen=.shen
+--type-set=orgmode=.org

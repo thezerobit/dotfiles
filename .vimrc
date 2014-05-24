@@ -32,9 +32,9 @@ set hidden
 set nowrap
 "set number "line numbers
 set expandtab
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=8
+set shiftwidth=8
+set softtabstop=8
 set shiftround
 set smarttab
 set autoindent
@@ -89,14 +89,6 @@ digraph an 8743 " ∧ and
 digraph or 8744 " ∨ or
 digraph fa 8704 " ∀ for all
 digraph te 8707 " ∃ there exists
-
-" crap I stole from @tpope
-set laststatus=2 " Always show status line
-if (&termencoding ==# 'utf-8' || &encoding ==# 'utf-8') && version >= 700
-  let &listchars = "tab:\u21e5\u00b7,trail:\u2423,extends:\u21c9,precedes:\u21c7,nbsp:\u26ad"
-else
-  set listchars=tab:>\ ,trail:-,extends:>,precedes:<
-endif
 
 filetype on
 filetype plugin on

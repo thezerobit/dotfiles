@@ -1,9 +1,0 @@
-[user]
-  name = Stephen A. Goss
-  email = sgoss@kavi.com
-[color]
-  ui = true
-[push]
-  default = current
-[core]
-  excludesfile = ~/.gitignore-global

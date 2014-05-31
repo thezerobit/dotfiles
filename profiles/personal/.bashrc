@@ -28,3 +28,10 @@ export LEIN_IRONIC_JURE=1
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# Iron Python
+# HOWTO compile: xbuild Solutions/IronPython.sln /p:Configuration=Release
+
+IRON_INSTALL=$HOME/3rdparty/IronLanguages
+export IRONPYTHONPATH=$IRON_INSTALL/External.LCA_RESTRICTED/Languages/IronPython/27/Lib:$IRONPYTHONPATH
+alias ipy="mono $IRON_INSTALL/bin/Release/ipy.exe"

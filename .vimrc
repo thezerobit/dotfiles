@@ -26,6 +26,8 @@ Bundle 'kien/ctrlp.vim'
 " Bundle 'scrooloose/nerdcommenter'
 " Bundle 'vim-scripts/VimClojure'
 
+call vundle#end()
+
 filetype plugin indent on     " required!
 
 set hidden
@@ -128,6 +130,10 @@ set encoding=utf-8
 if executable('ack-grep')
   let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 endif
+
+" CtrlP
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'
 
 " slimv / lisp / paredit
 let g:lisp_rainbow=1 " multi-color matched parens

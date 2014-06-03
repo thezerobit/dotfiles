@@ -54,7 +54,7 @@ set history=1000
 set undolevels=1000
 set title
 set backspace=indent,eol,start
-set list
+" set list
 set pastetoggle=<F4>
 set colorcolumn=80
 set autochdir

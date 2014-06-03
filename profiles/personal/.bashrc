@@ -35,3 +35,8 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 IRON_INSTALL=$HOME/3rdparty/IronLanguages
 export IRONPYTHONPATH=$IRON_INSTALL/External.LCA_RESTRICTED/Languages/IronPython/27/Lib:$IRONPYTHONPATH
 alias ipy="mono $IRON_INSTALL/bin/Release/ipy.exe"
+
+# virtualenvwrapper SETUP
+# mkdir $HOME/.virtualenvs
+export WORKON_HOME=$HOME/.virtualenvs
+[[ -s /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]] && source /usr/share/virtualenvwrapper/virtualenvwrapper.sh

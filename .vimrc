@@ -1,35 +1,7 @@
-" GETTING STARTED
-" git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
-
+" mkdir -p ~/.vim/tmp/{swap,undo,backup}
 set nocompatible
 filetype off
-
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-" let Vundle manage Vundle
-" required!
-
-Bundle 'gmarik/vundle'
-
-" My bundles here:
-" Bundle 'deliciousrobots/vimfiles'
-"
-" 3rd party bundles:
-Bundle 'kien/ctrlp.vim'
-" temporarily disabled bundles:
-" Bundle 'mileszs/ack.vim.git'
-" Bundle 'tpope/vim-surround'
-" Bundle 'tpope/vim-repeat'
-" Bundle 'deliciousrobots/smarty.vim'
-" Bundle 'deliciousrobots/slimv.vim'
-" Bundle 'scrooloose/nerdcommenter'
-" Bundle 'vim-scripts/VimClojure'
-
-call vundle#end()
-
 filetype plugin indent on     " required!
-
 set hidden
 "set number "line numbers
 set expandtab

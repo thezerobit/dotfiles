@@ -5,6 +5,7 @@ alias ls='ls --color=auto'
 # I want lisp
 alias lisp='rlwrap sbcl'
 alias shen='rlwrap shen'
+alias cshen='rlwrap clisp -M ~/Shen.mem -q'
 alias typed_racket='rlwrap racket -I typed/racket'
 
 export PATH=$HOME/racket/bin:$HOME/opt/bin:$HOME/opt/mercury-14.01/bin:$HOME/opt/xsb-3.4.0/bin:$PATH
@@ -25,6 +26,8 @@ export CCL_DEFAULT_DIRECTORY=$HOME/build/ccl
 
 # to spite the uppity leiningen devs
 export LEIN_IRONIC_JURE=1
+
+export EDITOR=vim
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

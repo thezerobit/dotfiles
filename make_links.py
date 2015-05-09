@@ -64,15 +64,4 @@ if __name__ == '__main__':
 
     link_files(dotfiles, dotfiles_dir)
 
-    profiles_dir = join(dirname(realpath(__file__)), 'profiles')
-    profiles = os.listdir(profiles_dir)
-    profile_name = raw_input("Select profile (" + " ".join(profiles) + "): ")
-    prof_dir = join(profiles_dir, profile_name)
-    if isdir(prof_dir):
-        prof_files = set(os.listdir(prof_dir))
-        print("Linking profile files...")
-        link_files(prof_files, prof_dir)
-    else:
-        print("Error: invalid profile.")
-
     print("done!")

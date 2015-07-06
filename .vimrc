@@ -1,7 +1,43 @@
+" Initial Vim Setup
+" 1. Create important folders:
 " mkdir -p ~/.vim/tmp/{swap,undo,backup}
+" 2. Clone Vundle:
+" git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+" 3. Install plugins
+" vim +PluginInstall +qall
+
+" START Vundle
+
 set nocompatible
 filetype off
-filetype plugin indent on     " required!
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+" CtrlP
+Plugin 'kien/ctrlp.vim'
+" Erlang
+Plugin 'jimenezrick/vimerl'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+" see :h vundle for more details or wiki for FAQ
+" Put your non-Plugin stuff after this line
+
+" END Vundle
+
 set hidden
 "set number "line numbers
 set expandtab
@@ -113,5 +149,6 @@ let g:lisp_rainbow=1 " multi-color matched parens
 " slimv repl syntax highlight seems broken
 let g:slimv_repl_syntax = 0
 
-
+au BufRead,BufNewFile *.dats set filetype=ats
+au BufRead,BufNewFile *.sats set filetype=ats 
 

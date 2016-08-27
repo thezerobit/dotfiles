@@ -6,11 +6,14 @@ alias ls='ls --color=auto'
 alias lisp='rlwrap sbcl'
 alias shen='rlwrap shen'
 alias cshen='rlwrap clisp -M ~/Shen.mem -q'
+
+# sbcl
+export SBCL_HOME=/home/steve/opt/lib/sbcl
+
+# racket shit
 alias typed_racket='rlwrap racket -I typed/racket'
-
-export PATH=$HOME/racket/bin:$HOME/opt/bin:$HOME/opt/mercury-14.01/bin:$HOME/opt/xsb-3.4.0/bin:$PATH
-
-export MANPATH=$HOME/opt/man:$HOME/opt/mercury-14.01/man:$MANPATH
+export PATH=$HOME/opt/bin:$HOME/racket/bin:$PATH
+export MANPATH=$HOME/racket/man:$MANPATH
 
 export TERM='xterm-256color'
 

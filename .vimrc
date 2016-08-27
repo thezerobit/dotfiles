@@ -22,6 +22,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 " Erlang
 Plugin 'jimenezrick/vimerl'
+" Mercury
+Plugin 'Mercury-Language/mercury', {'rtp': 'vim/'}
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -97,13 +99,14 @@ digraph an 8743 " ∧ and
 digraph or 8744 " ∨ or
 digraph fa 8704 " ∀ for all
 digraph te 8707 " ∃ there exists
+digraph la 955  " λ lambda
 
 filetype on
 filetype plugin on
 filetype indent on
 if has('autocmd')
-    autocmd filetype markdown setlocal textwidth=72
-    autocmd filetype markdown setlocal fo=atq
+    " autocmd filetype markdown setlocal textwidth=72
+    " autocmd filetype markdown setlocal fo=atq
     autocmd filetype python setlocal shiftwidth=4
     autocmd filetype python setlocal softtabstop=4
     autocmd filetype php setlocal shiftwidth=4

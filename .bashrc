@@ -11,9 +11,9 @@ alias cshen='rlwrap clisp -M ~/Shen.mem -q'
 export SBCL_HOME=/home/steve/opt/lib/sbcl
 
 # racket shit
-alias typed_racket='rlwrap racket -I typed/racket'
-export PATH=$HOME/opt/bin:$HOME/racket/bin:$PATH
-export MANPATH=$HOME/racket/man:$MANPATH
+# alias typed_racket='rlwrap racket -I typed/racket'
+# export PATH=$HOME/opt/bin:$HOME/racket/bin:$PATH
+# export MANPATH=$HOME/racket/man:$MANPATH
 
 export TERM='xterm-256color'
 
@@ -32,3 +32,6 @@ export EDITOR=vim
 # mkdir $HOME/.virtualenvs
 export WORKON_HOME=$HOME/.virtualenvs
 [[ -s /usr/share/virtualenvwrapper/virtualenvwrapper.sh ]] && source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+
+# rust / cargo
+export PATH=$HOME/.cargo/bin:$PATH
